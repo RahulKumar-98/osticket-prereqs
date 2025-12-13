@@ -29,7 +29,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 
 <p>
-"<img width="926" height="1143" alt="1" src="https://github.com/user-attachments/assets/d8da117f-1d10-4e95-bd40-c3582172694c" />
+<img width="926" height="1143" alt="1" src="https://github.com/user-attachments/assets/d8da117f-1d10-4e95-bd40-c3582172694c" />
 </p>
 <p>
 To get started, we will first create a virtual machine. This virtual machine will be housed under a new Resource Group named "osTicket" and the virtual machine (VM) will be names "osticket-vm". When creating the VM, we will be selecting a Windows 10 image, the size of the virtual machine will contain at least 2 vcpus. Set username and password to your preference.
