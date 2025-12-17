@@ -32,7 +32,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img width="926" height="1143" alt="1" src="https://github.com/user-attachments/assets/d8da117f-1d10-4e95-bd40-c3582172694c" />
 </p>
 <p>
-To get started, we will first create a virtual machine. This virtual machine will be housed under a new Resource Group named "osTicket" and the virtual machine (VM) will be names "osticket-vm". When creating the VM, we will be selecting a Windows 10 image, the size of the virtual machine will contain at least 2 vcpus. Set username and password to your preference.
+To get started, we will first create a virtual machine. This virtual machine will be housed under a new Resource Group named "osTicket" and the virtual machine (VM) will be named "osticket-vm". When creating the VM, we will be selecting a Windows 10 image, the size of the virtual machine will contain at least 2 vcpus. Set username and password to your preference.
 </p>
 <br />
 
@@ -41,7 +41,7 @@ To get started, we will first create a virtual machine. This virtual machine wil
 
 </p>
 <p>
-Once the VM has been created, we will copy the public IP address of the VM and paste it onto the Remote Desktop application. In the Remote Dekstop app, select show more options and enter in the username that was created in the first step.
+Once the VM has been created, we will copy the public IP address of the VM and paste it onto the Remote Desktop application. In the Remote Desktop app, select "show more options" and enter in the username that was created in the first step.
 </p>
 <br />
 
@@ -104,7 +104,7 @@ Once the PHP Manager has been installed, we will install the Rewrite Module next
 
 
 <p>
-The next step involves extracting the relative PHP files from the OsTicket-Installation-Files folder, and placing them in a new folder within the VM's (C:) drive, named "PHP". First we will create our PHP folder in the drive. Navigate using the following steps in File Explorer and create a folder named "PHP". Click on "This PC" -> "Windows (C:)" -> Create a new folder named "PHP".
+The next step involves extracting the relative PHP files from the OsTicket-Installation-Files folder, and placing them in a new folder within the VM's (C:) drive, named "PHP". First, we will create our PHP folder in the drive. Navigate using the following steps in File Explorer and create a folder named "PHP". Click on "This PC" -> "Windows (C:)" -> Create a new folder named "PHP".
 </p>
 <br />
 
