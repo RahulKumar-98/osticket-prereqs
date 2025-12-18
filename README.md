@@ -41,7 +41,7 @@ To get started, we will first create a virtual machine. This virtual machine wil
 
 </p>
 <p>
-Once the VM has been created, we will copy the public IP address of the VM and paste it onto the Remote Desktop application. In the Remote Desktop app, select "show more options" and enter in the username that was created in the first step.
+Once the VM has been created, we will copy the public IP address of the VM and paste it into the Remote Desktop application. In the Remote Desktop app, select "show more options" and enter the username that was created in the first step.
 </p>
 <br />
 
@@ -59,7 +59,7 @@ Once logged onto the virtual machine, we will open and download the following fi
 </p>
 
 <p>
-Next, we will have to enable IIS (Internet Information Services) in Windows with CGI. To do this, open up control panel from the start menu -> click "Uninstall a Program" 
+Next, we will have to enable IIS (Internet Information Services) in Windows with CGI. To do this, open up control panel from the Start menu -> click "Uninstall a Program" 
 </p>
 <br />
 
@@ -70,7 +70,7 @@ Next, we will have to enable IIS (Internet Information Services) in Windows with
 
 
 <p>
-Next we will click "Turn Windows features on or off" -> check the box next to the "Internet Information Services" feature. Additionally, we would expand the drop down under "World Wide Web Services" and "Application Development Features" to enable the "CGI" feature on our VM. (If you'd like to perform a safety check to see if IIS has been enabled, type the following loopback address "127.0.0.1" in your search browser and you should see the IIS landing page!)
+Next we will click "Turn Windows features on or off" -> check the box next to the "Internet Information Services" feature. Additionally, we would expand the drop-down under "World Wide Web Services" and "Application Development Features" to enable the "CGI" feature on our VM. (If you'd like to perform a safety check to see if IIS has been enabled, type the following loopback address "127.0.0.1" in your search browser, and you should see the IIS landing page!)
 </p>
 <br />
 
@@ -125,7 +125,7 @@ Now we will extract the php zip folder "php-7.3.8-nts-Win32-VC15-x86.zip" in the
 
 
 <p>
-Next, we will install the VC_redist.x86 application found in the OsTicket-Installation-Files folder, this is a Microsoft Visual Studio C++ Redistributable necessary for our OsTicket installation.
+Next, we will install the VC_redist.x86 application found in the OsTicket-Installation-Files folder. This is a Microsoft Visual Studio C++ Redistributable necessary for our OsTicket installation.
 </p>
 <br />
 
@@ -137,7 +137,7 @@ Next, we will install the VC_redist.x86 application found in the OsTicket-Instal
 
 
 <p>
-Now we can install the MySQL Server (mysql-5.5.62-win32) from the OsTicket-Installation-Files folder, this will serve as a database for our OsTicket application. Please follow the installation prompts and select "Standard Configuration" when prompted to do so.
+Now we can install the MySQL Server (mysql-5.5.62-win32) from the OsTicket-Installation-Files folder; this will serve as a database for our OsTicket application. Please follow the installation prompts and select "Standard Configuration" when prompted to do so.
 </p>
 <br />
 
@@ -148,7 +148,7 @@ Now we can install the MySQL Server (mysql-5.5.62-win32) from the OsTicket-Insta
 
 
 <p>
-Next, we will have to register PHP in IIS Manager. Search Internet Information Services (IIS) Manager from the search bar by the start menu, right click and select "Run as Administrator".
+Next, we will have to register PHP in IIS Manager. Search Internet Information Services (IIS) Manager from the search bar in the Start menu, right-click, and select "Run as Administrator".
 </p>
 <br />
 
@@ -172,7 +172,7 @@ Click on the "..." next to the text box and select the "php-cgi.exe" file found 
 
 
 <p>
-Now we will refresh IIS to update it's PHP registration. First we will click on the "osticket-vm" tab on the lefthand side of the IIS Manager to get to the home page. Once there, we will hit "Stop" and then "Start" to restart the IIS manager. 
+Now we will refresh IIS to update its PHP registration. First, we will click on the "osticket-vm" tab on the left-hand side of the IIS Manager to get to the home page. Once there, we will hit "Stop" and then "Start" to restart the IIS manager. 
 </p>
 <br />
 
@@ -198,7 +198,7 @@ The next step involves the installation of the OsTicket application from the zip
 
 
 <p>
-Once the above has been completed, we will refresh the IIS Manager per the instructions mentioned previously. Now we will enable certain PHP extensions to meet OsTicket qualifications and requirements. Within the IIS Manager homepage, we will select PHP Manager under the "osticket-vm" tab on the left hand side of the page. Then we will click on "Disable or enable an extension" 
+Once the above has been completed, we will refresh the IIS Manager per the instructions mentioned previously. Now we will enable certain PHP extensions to meet OsTicket qualifications and requirements. Within the IIS Manager homepage, we will select PHP Manager under the "osticket-vm" tab on the left hand side of the page. Then we will click on "Disable or enable an extension".
 </p>
 <br />
 
@@ -234,7 +234,7 @@ Next, in File Explorer, we are going to rename the "ost-sampleconfig.php" file l
 <img width="364" height="507" alt="image" src="https://github.com/user-attachments/assets/3f9cdac7-22d4-4481-9be5-f0f9b65b9aa4" />
 
 <p>
-Once the file has been renamed, we will adjust it's permissions settings to grant everyone access by doing the following. First we will right-click on the "ost-config.php" file and select properties. Click on the Security tab at the top and select "Advanced" 
+Once the file has been renamed, we will adjust its permissions settings to grant everyone access by doing the following. First, we will right-click on the "ost-config.php" file and select properties. Click on the Security tab at the top and select "Advanced" 
 </p>
 <br />
 </p>
@@ -244,14 +244,14 @@ Once the file has been renamed, we will adjust it's permissions settings to gran
 <img width="758" height="144" alt="22" src="https://github.com/user-attachments/assets/d43a2aa7-a381-4f1d-a34a-3ef04388f079" />
 
 <p>
-Next, we will click on "Disable Inheritance" found on the bottom left of the "Advanced Security Setting for ost-config.php" pop-up window. You will be prompted with a message asking to "Remove all inherited permissions", we will select that to remove all inherited permissions.
+Next, we will click on "Disable Inheritance" found on the bottom left of the "Advanced Security Settings for ost-config.php" pop-up window. You will be prompted with a message asking to "Remove all inherited permissions", we will select that to remove all inherited permissions.
 </p>
 <br />
 
 <img width="797" height="328" alt="23" src="https://github.com/user-attachments/assets/4032db12-9895-49fa-9070-89fb95e46b43" />
 
 <p>
-In order to enable permissions or add permissions for everybody, in this case, we can select "Add" in the "Advanced Security Setting for ost-config.php" pop-up window. Next we will click "Select a principal" and enter "Everyone" in the text box under "Enter the object name to select". Click "Check Names" and then "OK".
+In order to enable permissions or add permissions for everybody, in this case, we can select "Add" in the "Advanced Security Settings for ost-config.php" pop-up window. Next we will click "Select a principal" and enter "Everyone" in the text box under "Enter the object name to select". Click "Check Names" and then "OK".
 </p>
 <br />
 
@@ -265,13 +265,13 @@ Next, under the basic permissions window, we can configure the types of permissi
 <img width="1899" height="445" alt="25" src="https://github.com/user-attachments/assets/abccfdf0-3a63-4bce-bd79-f70087a9ff2c" />
 
 <p>
-Lastly, we can navigate to our OsTicket browser by doing the following steps. First, navigate back to the IIS Manager home page and click on the drop down named "osticket-vmd" -> click on the "Sites" dropdown -> click on the "Default Web Site" drop down -> click on the "osTicket" tab. From here we will click on "Browse*:80 (http)" located on the far right side under "Manage Folder" and "Browse Folder". This opens up the following link on your VM's default browser (http://localhost/osTicket/).
+Lastly, we can navigate to our OsTicket browser by doing the following steps. First, navigate back to the IIS Manager home page and click on the drop-down named "osticket-vmd" -> click on the "Sites" drop-down -> click on the "Default Web Site" drop-down -> click on the "osTicket" tab. From here we will click on "Browse*:80 (http)" located on the far right side under "Manage Folder" and "Browse Folder". This opens up the following link on your VM's default browser (http://localhost/osTicket/).
 </p>
 <br />
 
 <img width="1245" height="622" alt="26" src="https://github.com/user-attachments/assets/8f80aa5e-319e-43f6-865d-50eb0e74cd4b" />
 
 <p>
-You may now press continue on the browser and configure relative System settings, Admin User settings, and Database Settings. OsTicket installation has now been completed.
+You may now press continue on the browser and configure the relevant System settings, Admin User settings, and Database Settings. OsTicket installation has now been completed.
 </p>
 <br />
